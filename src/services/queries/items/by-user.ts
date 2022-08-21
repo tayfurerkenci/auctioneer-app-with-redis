@@ -5,4 +5,10 @@ interface QueryOpts {
 	direction: string;
 }
 
-export const itemsByUser = async (userId: string, opts: QueryOpts) => {};
+export const itemsByUser = async (userId: string, opts: QueryOpts) => {
+
+	const items = {};
+	const totalPages = {};
+
+	return { items, totalPages };
+};
